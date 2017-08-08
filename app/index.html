@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <title>4.2 daily Github Api</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+
+<body>
+  <header>
+    <h1>Brad Carson</h1>
+  </header>
+  <section class="main-section">
+    <div class="container">
+      <div class="row container-info">
+
+        <div class="the-basics col-md-4">
+          <!-- template -->
+        </div>
+        <div class="the-story col-md-6">
+          <!-- template -->
+        </div>
+        <div class="pic col-md-2">
+          <!-- template -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <script id="basics-template" type="text/x-handlebars-template">
+    <h2>The Basics</h2>
+    <div class="basic-info">
+      <p>Name: {{ name }}</p>
+      <p>Github URL: {{ html_url }}</p>
+      <p>Email: {{ email }}</p>
+      <p>Company: {{ company }} Big Bad Company</p>
+      <p>Website: {{ website }} bigbadfakewebsite.io</p>
+    </div>
+  </script>
+  <script id="story-template" type="text/x-handlebars-template">
+    <h2>The Story</h2>
+    <p>{{bio}} Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+  </script>
+  <script id="pic-template" type="text/x-handlebars-template">
+    <img src="{{avatar_url}}" alt="">
+  </script>
+  <script src="js/bundle.js"></script>
+</body>
+
+</html>
